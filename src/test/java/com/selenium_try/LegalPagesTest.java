@@ -7,13 +7,13 @@ import org.junit.Before;
 public class LegalPagesTest extends TestUtils {
 
     @Before
-	public void beforeEach(){
+    public void beforeEach(){
         driver.get(BaseURL + "/");
-	}
+    }
     
     @Test
-	public void termsOfServiceLoads() {
-		
+    public void termsOfServiceLoads() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -26,11 +26,11 @@ public class LegalPagesTest extends TestUtils {
 
         super.takeScreenshot("termsOfService_bottom");
       
-	}
+    }
 
     @Test
-	public void privacyPolicyLoads() {
-		
+    public void privacyPolicyLoads() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -43,11 +43,11 @@ public class LegalPagesTest extends TestUtils {
 
         super.takeScreenshot("privacyPolicy_bottom");
       
-	}
+    }
 
     @Test
-	public void copyrightPolicyLoads() {
-		
+    public void copyrightPolicyLoads() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -60,11 +60,11 @@ public class LegalPagesTest extends TestUtils {
 
         super.takeScreenshot("copyrightPolicy_bottom");
       
-	}
+    }
 
     @Test
-	public void contactUsLoads() {
-		
+    public void contactUsLoads() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -75,5 +75,5 @@ public class LegalPagesTest extends TestUtils {
 
         super.takeScreenshot("help_page_start");
       
-	}
+    }
 }

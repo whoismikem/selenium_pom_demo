@@ -8,20 +8,20 @@ import org.junit.Before;
 public class HomePageTest extends TestUtils {
 
     @Before
-	public void beforeEach(){
+    public void beforeEach(){
         driver.get(BaseURL + "/");
-	}
+    }
     
     @Test
-	public void navigateToHomePage() {
-		
+    public void navigateToHomePage() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
-	}
+    }
 
     @Test
-	public void navigateToMarketplacePage() {
-		
+    public void navigateToMarketplacePage() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -30,11 +30,11 @@ public class HomePageTest extends TestUtils {
         MarketplacePage marketplacePage = new MarketplacePage(driver);
         assertTrue("Verify marketplace page loaded", 
                     marketplacePage.isInitialized());
-	}
+    }
 
     @Test
-	public void navigateToNewsPage() {
-		
+    public void navigateToNewsPage() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -43,11 +43,11 @@ public class HomePageTest extends TestUtils {
         NewsPage newsPage = new NewsPage(driver);
         assertTrue("Verify news page loaded", 
                     newsPage.isInitialized());
-	}
+    }
 
     @Test
-	public void navigateToShopPage() {
-		
+    public void navigateToShopPage() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -56,11 +56,11 @@ public class HomePageTest extends TestUtils {
         ShopPage shopPage = new ShopPage(driver);
         assertTrue("Verify shop page loaded", 
                     shopPage.isInitialized());
-	}
+    }
 
     @Test
-	public void legalLinksPresent() {
-		
+    public void legalLinksPresent() {
+        
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
 
@@ -71,10 +71,10 @@ public class HomePageTest extends TestUtils {
         assertEquals("Check if Terms of Service link is present in footer", 
                     homePage.footer.termsOfServiceLinkText(), 
                     "Terms of Service");
-	}
+    }
 
     @Test
-	public void navigateToTermsOfService() {
+    public void navigateToTermsOfService() {
 
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isInitialized());
@@ -83,6 +83,6 @@ public class HomePageTest extends TestUtils {
 
         TermsOfServicePage termsOfServicePage = new TermsOfServicePage(driver);
         assertTrue(termsOfServicePage.isInitialized());
-		
-	}		
+        
+    }		
 }
