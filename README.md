@@ -1,7 +1,7 @@
 # Selenium Page Object Model Demo
 ## Description
 * Demonstration project for structuring tests using Selenium + Java + Page Object Model
-* Project applies to the speerch social pratform https://www.gab.com
+* Project applies to the speech social pratform https://www.gab.com
 * Uses firefox driver
 
 ## Start 
