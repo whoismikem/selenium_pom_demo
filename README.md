@@ -2,6 +2,7 @@
 ## Description
 * Demonstration project for structuring tests using Selenium + Java + Page Object Model
 * Project applies to the speerch social pratform https://www.gab.com
+* Uses firefox driver
 
 ## Start 
 1. Install java (openjdk 17)
